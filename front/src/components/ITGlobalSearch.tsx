@@ -16,6 +16,7 @@ import {useState} from "react"
 import {useDebouncedCallback} from "use-debounce"
 import {useTranslation} from "react-i18next"
 import {useNavigateTo} from "@/hooks/useNavigateTo.ts"
+import dayjs from "dayjs";
 
 const ITGlobalSearch = () => {
     const { t } = useTranslation()
@@ -81,11 +82,20 @@ const ITGlobalSearch = () => {
                                 navigateTo(`/collection/${comment.collectionId}`)
                             }}
                         >
-                            <Typography>{comment.username}</Typography>
+                            <Typography
+                                style={{
+                                    whiteSpace: 'nowrap',
+                                    maxWidth: '350px',
+                                    overflow: 'hidden',
+                                    textOverflow: 'ellipsis',
+                                }}
+                            >
+                                {comment.comment}
+                            </Typography>
                             <Typography.Text
                                 type={'secondary'}
                             >
-                                {t('Comment')}
+                                {dayjs(comment.createdDate).format('DD.MM.YYYY')}
                             </Typography.Text>
                         </Flex>
                     ),
