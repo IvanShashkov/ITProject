@@ -15,6 +15,7 @@ import {DeleteOutlined, DownloadOutlined, EditOutlined} from "@ant-design/icons"
 
 import CsvDownload from "react-csv-downloader"
 import {csvPrepareData, csvPrepareHeader} from "@/features/collections/types/csvPrepare.ts"
+import {hasRole} from "@/plugins/hasRole.ts"
 
 type CollectionMenuPopoverProps = {
     children: any,
@@ -30,6 +31,7 @@ const CollectionMenuPopover = ({ children, collection, deleteCollection }: Colle
     const [isLoading, setIsLoading] = useState(false)
 
     const userId = useSelector<RootState>(state => state.initial.user._id)
+    const userRoles = useSelector<RootState>(state => state.initial.user.role)
 
     const deleteCollectionHandle = async () => {
         setIsLoading(true)
@@ -43,7 +45,7 @@ const CollectionMenuPopover = ({ children, collection, deleteCollection }: Colle
 
     const popoverContent = (
         <Flex vertical={true} gap={4}>
-            {userId === collection.userId &&
+            {userId === collection.userId || hasRole(userRoles, 'admin') &&
                 <>
                     <Button
                         disabled={isLoading}
