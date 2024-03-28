@@ -28,7 +28,6 @@ import {useNavigateTo} from "@/hooks/useNavigateTo.ts"
 import {useDispatch, useSelector} from "react-redux"
 import {useEffect, useState} from "react"
 
-// @ts-expect-error
 import logo from "../assets/logo.svg"
 
 import {localStorageThemeKey, setTheme, userInit} from "@/store/slice/initial.ts"
@@ -64,7 +63,8 @@ const ITLayout = () => {
         return `/${codeLang + location.pathname}`
     }
     const selectedPageKey = () => {
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         return `${matches[matches.length - 1].handle.crumb().key}`
     }
 
