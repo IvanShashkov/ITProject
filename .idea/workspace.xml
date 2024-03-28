@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="800a39f4-ffba-41e5-9645-451f53fc09b8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/back/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/api/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.2.8/bin/php" />
+  <component name="ProjectId" id="2czeIwKXrWhZXVk6OobTY2Rbncs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "18.16.1",
+    "javascript.nodejs.core.library.typings.version": "18.16.1",
+    "last_opened_file_path": "/Users/ivansaskov/PhpstormProjects/itproject/front/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/Users/ivansaskov/PhpstormProjects/itproject/front/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/assets" />
+      <recent name="$PROJECT_DIR$/front" />
+      <recent name="$PROJECT_DIR$/front/public" />
+      <recent name="$PROJECT_DIR$/front1/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front/src/assets" />
+      <recent name="$PROJECT_DIR$/front/src/features/collections/types" />
+      <recent name="$PROJECT_DIR$/front/src/features/collections/components/tables" />
+      <recent name="$PROJECT_DIR$/back/models" />
+      <recent name="$PROJECT_DIR$/back/models/fields" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="800a39f4-ffba-41e5-9645-451f53fc09b8" name="Changes" comment="" />
+      <created>1709118757649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709118757649</updated>
+      <workItem from="1709118759380" duration="5709000" />
+      <workItem from="1709414751446" duration="16881000" />
+      <workItem from="1709589856250" duration="3576000" />
+      <workItem from="1709677706143" duration="445000" />
+      <workItem from="1709896005077" duration="43810000" />
+      <workItem from="1710410337209" duration="38881000" />
+      <workItem from="1711025117346" duration="20734000" />
+      <workItem from="1711134144150" duration="32002000" />
+      <workItem from="1711378198631" duration="14596000" />
+      <workItem from="1711462118371" duration="9974000" />
+      <workItem from="1711475236072" duration="3296000" />
+      <workItem from="1711533148708" duration="3406000" />
+      <workItem from="1711543580963" duration="1829000" />
+      <workItem from="1711569120930" duration="5150000" />
+      <workItem from="1711579284102" duration="2000" />
+      <workItem from="1711579306367" duration="853000" />
+      <workItem from="1711580187244" duration="13000" />
+      <workItem from="1711580224639" duration="31000" />
+      <workItem from="1711580290649" duration="1044000" />
+      <workItem from="1711581365012" duration="7451000" />
+      <workItem from="1711589921648" duration="6427000" />
+      <workItem from="1711626609599" duration="370000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/front" />
+    </ignored-roots>
+  </component>
+</project>

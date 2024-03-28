@@ -2,8 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const routes = require('./routes/index.js')
-const apiRoutes = require('./routes/api')
+const routes = require('../routes')
+const apiRoutes = require('../routes/api')
 
 require('dotenv').config()
 
