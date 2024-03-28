@@ -1,20 +1,15 @@
 import {
-    Button,
     Input,
-    Space
 } from "antd"
-import {
-    CloseOutlined,
-    SearchOutlined
-} from "@ant-design/icons"
 
 import {Dispatch, SetStateAction} from "react"
 import {useTranslation} from "react-i18next"
 
-import {initialInput, inputType} from "@/defaults/contants.ts"
+import {inputType} from "@/defaults/contants.ts"
 
 import {filterCollectionsTable} from "@/features/collections/utils/filterCollectionsTable.ts"
 import {collectionsList} from "@/features/collections/types/collectionType.ts"
+import {useDebouncedCallback} from "use-debounce"
 
 type CollectionSearchFilter = {
     setCollectionsList: Dispatch<SetStateAction<collectionsList>>,
@@ -27,9 +22,6 @@ const CollectionSearchFilter = ({ filterSearch, setFilterSearch, setCollectionsL
     const { t } = useTranslation()
 
     const setFilter = () => {
-        if (!filterSearch.value) {
-            return
-        }
         setCollectionsList({
             ...collectionsList,
             filtered: filterCollectionsTable({
@@ -39,44 +31,18 @@ const CollectionSearchFilter = ({ filterSearch, setFilterSearch, setCollectionsL
         })
     }
 
-    const clearFilter = () => {
-        setFilterSearch(initialInput)
-        setCollectionsList({
-            ...collectionsList,
-            filtered: collectionsList.initial
-        })
-    }
+    const debouncedSetFilter = useDebouncedCallback(setFilter, 300)
 
     return (
-        <Space.Compact
-            onKeyDown={(event) => {
-                if (event.key === 'Enter') {
-                    setFilter()
-                }
+        <Input
+            size={'large'}
+            value={filterSearch.value}
+            onChange={(event) => {
+                setFilterSearch({ value: event.target.value, status: undefined })
+                debouncedSetFilter()
             }}
-        >
-            <Input
-                size={'large'}
-                value={filterSearch.value}
-                onChange={(event) => {
-                    setFilterSearch({ value: event.target.value, status: undefined })
-                }}
-                placeholder={t('Collections name')}
-            />
-            <Button
-                size={'large'}
-                onClick={setFilter}
-                disabled={!filterSearch.value}
-            >
-                <SearchOutlined />
-            </Button>
-            <Button
-                size={'large'}
-                onClick={clearFilter}
-            >
-                <CloseOutlined />
-            </Button>
-        </Space.Compact>
+            placeholder={t('Collections name')}
+        />
     )
 }
 

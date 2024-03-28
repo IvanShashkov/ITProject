@@ -39,7 +39,7 @@ const ITGlobalSearch = () => {
             setAxiosError(error)
         }
     }
-    const debouncedGetGlobalSearch = useDebouncedCallback(getGlobalSearch, 1000)
+    const debouncedGetGlobalSearch = useDebouncedCallback(getGlobalSearch, 300)
 
     const getOptions = () => {
         if (!collections || !comments) return []
