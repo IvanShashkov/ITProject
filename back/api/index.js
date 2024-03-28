@@ -21,5 +21,5 @@ app.use(bodyParser.json())
 app.use('/', routes)
 app.use('/api', apiRoutes)
 
-mongoose.connect(process.env.DB_CONN).then(() => app.listen(process.env.PORT))
+mongoose.connect('mongodb+srv://ivansshashkovv:Nesomnennoluchshiyparol1@cluster0.rgxmnl7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(() => app.listen(process.env.PORT))
 
