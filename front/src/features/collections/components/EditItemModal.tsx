@@ -106,7 +106,8 @@ const EditItemModal = ({ open, item, currItems, setItems, type, setOpenModal, fi
                 {
                     itemState.fields.map((field, index) => {
                         if (field.type === 'date') {
-                            const validatedDate = field.value ? dayjs(`${field.value}`) : undefined
+                            // @ts-ignore
+                            const validatedDate: Date = field.value ? dayjs(`${field.value}`) : undefined
                             return (
                                 <Flex
                                     key={index}

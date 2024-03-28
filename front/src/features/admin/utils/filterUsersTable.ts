@@ -10,6 +10,6 @@ export const filterUsersTable = ({ filterSelect, filterSearch, data }: filterUse
     if (!data) {
         return []
     }
-
+    // @ts-ignore
     return data.filter(user => user[filterSelect].toLowerCase().includes(filterSearch.toLowerCase()))
 }
