@@ -45,7 +45,7 @@ const CollectionMenuPopover = ({ children, collection, deleteCollection }: Colle
 
     const popoverContent = (
         <Flex vertical={true} gap={4}>
-            {userId === collection.userId || hasRole(userRoles, 'admin') &&
+            {(userId === collection.userId || hasRole(userRoles, 'admin')) &&
                 <>
                     <Button
                         disabled={isLoading}
