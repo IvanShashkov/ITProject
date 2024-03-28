@@ -9,6 +9,11 @@ export const getTitlePage = (type: 'edit' | 'create') => {
     if (type === 'create' ) return 'Create collection'
 }
 
+export const getActionTitle = (type: 'edit' | 'create') => {
+    if (type === 'edit' ) return 'Save collection'
+    if (type === 'create' ) return 'Create collection'
+}
+
 export const prepareItemDataFieldsToReq = (itemDataFields: createCollectionDataFields[] | collectionDataFields[]) : collectionDataFields[] => {
     return itemDataFields.map((field) => ({
         type: field.type,

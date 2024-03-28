@@ -43,7 +43,7 @@ export const en = {
     'Actions': 'Actions',
     'Export': 'Export',
     'My collections': 'My collections',
-    'Likes': 'Лайки',
+    'Likes': 'Likes',
     'Liked collections': 'Liked collections',
     'Send comment': 'Send comment',
     'Back to Main': 'Back to Main',
@@ -56,4 +56,5 @@ export const en = {
     'No results': 'No results',
     'Light': 'Light',
     'Dark': 'Dark',
+    'Save collection': 'Save collection'
 }

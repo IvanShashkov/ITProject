@@ -36,6 +36,7 @@ import {initialInput} from "@/defaults/contants.ts"
 import {getInitialField} from "@/features/collections/data/getInitialCollectionsFields.ts"
 import {getFieldTypeIcon} from "@/features/collections/utils/getFieldTypeIcon.tsx"
 import {
+    getActionTitle,
     getInitialNewItem,
     getTitlePage,
     prepareCollectionFieldsToFront,
@@ -289,12 +290,12 @@ const NewCollection = ({ type }: { type: 'edit' | 'create' }) => {
                         />
                         <Button
                             size={'large'}
-                            type={'dashed'}
                             disabled={isLoading}
+                            type={'primary'}
                             icon={ <SaveOutlined /> }
                             onClick={actionCollection}
                         >
-                            {t(`${getTitlePage(type)}`)}
+                            {t(`${getActionTitle(type)}`)}
                         </Button>
                     </Flex>
                     {editModalOpen &&
