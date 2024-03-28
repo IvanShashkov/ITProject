@@ -4,6 +4,7 @@ import {
     Input,
     Typography
 } from "antd"
+import {LoadingOutlined} from "@ant-design/icons"
 
 import {initialInput} from "@/defaults/contants.ts"
 import {collectionType} from "@/features/collections/types/collectionType.ts"
@@ -25,6 +26,7 @@ const ITGlobalSearch = () => {
     const [searchValue, setSearchValue] = useState(initialInput)
     const [collections, setCollections] = useState<collectionType[] | undefined>(undefined)
     const [comments, setComments] = useState<commentType[] | undefined>(undefined)
+    const [isLoading, setIsLoading] = useState(false)
 
     const getGlobalSearch = async () => {
         if (!searchValue.value) {
@@ -32,12 +34,15 @@ const ITGlobalSearch = () => {
             setComments([])
             return
         }
+        setIsLoading(true)
         try {
             const { data: { collections, comments } } = await api.post('/api/getGlobalSearch', { searchValue: searchValue.value })
             setCollections(collections)
             setComments(comments)
         } catch (error) {
             setAxiosError(error)
+        } finally {
+            setIsLoading(false)
         }
     }
     const debouncedGetGlobalSearch = useDebouncedCallback(getGlobalSearch, 300)
@@ -119,6 +124,7 @@ const ITGlobalSearch = () => {
                 placeholder={t('Search')}
                 value={searchValue.value}
                 size={'large'}
+                suffix={isLoading && <LoadingOutlined/>}
                 onChange={(event) => {
                     setSearchValue({ value: event.target.value, status: undefined })
                     debouncedGetGlobalSearch()
