@@ -120,6 +120,7 @@ const EditItemModal = ({ open, item, currItems, setItems, type, setOpenModal, fi
                                     <DatePicker
                                         locale={datePickerLocales.get(i18n.language)}
                                         status={field.status}
+                                        size={'small'}
                                         value={validatedDate}
                                         format={'DD.MM.YYYY'}
                                         onChange={(date: Date) => onChangeCell(date, index)}
