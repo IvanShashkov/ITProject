@@ -56,5 +56,6 @@ export const en = {
     'No results': 'No results',
     'Light': 'Light',
     'Dark': 'Dark',
-    'Save collection': 'Save collection'
+    'Save collection': 'Save collection',
+    'Sing in': 'Sing in',
 }

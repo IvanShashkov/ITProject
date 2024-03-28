@@ -71,7 +71,7 @@ const ITAccountMenu = () => {
         <>
             {!userUsername &&
                 <Button onClick={() => navigateTo('/registration')}>
-                    Sing in
+                    {t('Sing in')}
                 </Button>
             }
             {userUsername &&

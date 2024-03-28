@@ -57,5 +57,6 @@ export const ru = {
     'No results': 'Нет результатов',
     'Light': 'Светлая',
     'Dark': 'Тёмная',
-    'Save collection': 'Сохранить коллекцию'
+    'Save collection': 'Сохранить коллекцию',
+    'Sing in': 'Зарегистрироваться',
 }
