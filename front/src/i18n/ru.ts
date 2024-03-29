@@ -59,4 +59,5 @@ export const ru = {
     'Dark': 'Тёмная',
     'Save collection': 'Сохранить коллекцию',
     'Sing in': 'Зарегистрироваться',
+    'Comments': 'Комментарии',
 }

@@ -58,4 +58,5 @@ export const en = {
     'Dark': 'Dark',
     'Save collection': 'Save collection',
     'Sing in': 'Sing in',
+    'Comments': 'Comments',
 }
