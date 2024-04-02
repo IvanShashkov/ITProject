@@ -59,4 +59,8 @@ export const en = {
     'Save collection': 'Save collection',
     'Sing in': 'Sing in',
     'Comments': 'Comments',
+    'User already exist': 'User already exist',
+    'User not found': 'User not found',
+    'Wrong password': 'Wrong password',
+    'User is banned': 'User is banned',
 }

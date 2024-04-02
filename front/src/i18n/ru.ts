@@ -60,4 +60,8 @@ export const ru = {
     'Save collection': 'Сохранить коллекцию',
     'Sing in': 'Зарегистрироваться',
     'Comments': 'Комментарии',
+    'User already exist': 'Пользователь с таким имененем уже существует',
+    'User not found': 'Пользователь не найден',
+    'Wrong password': 'Неправильный пароль',
+    'User is banned': 'Пользователь заблокирован',
 }
